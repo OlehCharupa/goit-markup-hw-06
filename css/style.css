@@ -451,14 +451,15 @@ a {
   max-width: 528px;
   width: 100%;
   height: 581px;
+  padding: 40px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden .modal-open-content {
   transform: translateX(-300%);
@@ -485,7 +486,35 @@ a {
   width: 11px;
   height: 11px;
 }
+.modal-open-content .modal-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-title {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+.input-text {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
 
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
 /* ===============   Футер   ================== */
 
 .footer-page {
