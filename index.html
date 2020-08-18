@@ -447,32 +447,71 @@
         </div>
         <div class="subscription">
           <b class="text">Подпишитесь на рассылку</b>
+          <form class="subscription-box js-speaker-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="email-input"
+              autocomplete="off"
+            />
+            <button type="submit" class="btn-submit">
+              Подписаться
+              <svg class="icon-telegram">
+                <use href="./images/sprint.svg#icon-icontelegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
 
     <!-- ===== МОДАЛЬНОЕ ОКНО ===== -->
     <div class="is-hidden backdrop" data-modal>
-      <div class="modal-open-content" data-modal-open>
+      <form class="modal-open-content" data-modal-open>
         <button class="button-close-modal" data-modal-close>
           <svg class="icon-close">
             <use href="./images/sprint.svg#icon-icon-close"></use>
           </svg>
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <div class="form-field">
-          <label class="form-title" for="name">Имя</label>
-          <input type="text" class="input-text" id="name" />
+        <div class="modal-form-field">
+          <label class="modal-form-title" for="name">Имя</label>
+          <input
+            type="text"
+            class="modal-input-text"
+            name="user-name"
+            id="name"
+          />
         </div>
-        <div class="form-field">
-          <label class="form-title" for="tel">Телефон</label>
-          <input type="tel" class="input-text" id="tel" />
+        <div class="modal-form-field">
+          <label class="modal-form-title" for="tel">Телефон</label>
+          <input
+            type="tel"
+            class="modal-input-text"
+            name="user-phone"
+            id="tel"
+          />
         </div>
-        <div class="form-field">
-          <label class="form-title" for="email">Почта</label>
-          <input type="email" class="input-text" id="email" />
+        <div class="modal-form-field">
+          <label class="modal-form-title" for="modal-email">Почта</label>
+          <input
+            type="email"
+            class="modal-input-text"
+            name="user-email"
+            id="modal-email"
+          />
         </div>
-      </div>
+        <div class="modal-form-field">
+          <label class="modal-form-title" for="massage">Комментарий</label>
+          <textarea
+            class="modal-texteria-text"
+            name="user-massage"
+            id="massage"
+          ></textarea>
+        </div>
+      </form>
     </div>
     <script src="./modal.js"></script>
     <!-- ===== JS для форм ======= -->
