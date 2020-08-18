@@ -23,7 +23,7 @@
             ><span class="text">Web</span>Studio</a
           >
           <ul class="site-nav list">
-            <li class="item">
+            <li class="item current">
               <a href="./index.html" class="link">Студия</a>
             </li>
             <li class="item">
@@ -469,7 +469,11 @@
 
     <!-- ===== МОДАЛЬНОЕ ОКНО ===== -->
     <div class="is-hidden backdrop" data-modal>
-      <form class="modal-open-content" data-modal-open>
+      <form
+        class="modal-open-content js-speaker-form"
+        data-modal-open
+        autocomplete="off"
+      >
         <button class="button-close-modal" data-modal-close>
           <svg class="icon-close">
             <use href="./images/sprint.svg#icon-icon-close"></use>
@@ -484,6 +488,9 @@
             name="user-name"
             id="name"
           />
+          <svg class="modal-icon-black">
+            <use href="./images/sprint.svg#icon-person-black"></use>
+          </svg>
         </div>
         <div class="modal-form-field">
           <label class="modal-form-title" for="tel">Телефон</label>
@@ -493,6 +500,9 @@
             name="user-phone"
             id="tel"
           />
+          <svg class="modal-icon-black">
+            <use href="./images/sprint.svg#icon-phone-black"></use>
+          </svg>
         </div>
         <div class="modal-form-field">
           <label class="modal-form-title" for="modal-email">Почта</label>
@@ -502,6 +512,9 @@
             name="user-email"
             id="modal-email"
           />
+          <svg class="modal-icon-black">
+            <use href="./images/sprint.svg#icon-email-black"></use>
+          </svg>
         </div>
         <div class="modal-form-field">
           <label class="modal-form-title" for="massage">Комментарий</label>
@@ -509,8 +522,33 @@
             class="modal-texteria-text"
             name="user-massage"
             id="massage"
+            placeholder="Введите текст"
           ></textarea>
         </div>
+        <div class="modal-form-checkbox">
+          <label class="modal-checkbox-text" for="policy">
+            <span class="checkmark"></span>
+            <input
+              class="modal-checkbox-input"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            Соглашаюсь с рассылкой и принимаю
+            <a class="policy-link" href="#">Условия договора</a>
+          </label>
+        </div>
+        <!-- <label class="container3"
+          >Соглашаюсь с рассылкой и принимаю<a class="policy-link" href="#"
+            >Условия договора</a
+          >
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+        </label> -->
+
+        <button type="submit" class="modal-btn-submit">
+          Отправить
+        </button>
       </form>
     </div>
     <script src="./modal.js"></script>
