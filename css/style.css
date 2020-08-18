@@ -537,100 +537,52 @@ a {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 16px;
+  padding-right: 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
 }
-.modal-form-checkbox {
-  /* display: flex;
+.modal-checkbox {
+  margin-bottom: 30px;
+}
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+.lable {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
-  min-height: 24px; */
-  display: block;
-  position: relative;
-  /* padding-left: 35px;
-  margin-bottom: 12px; */
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
-.modal-checkbox-input {
-  /* margin-right: 7px; */
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  border-radius: 2px;
+  margin-right: 7px;
 }
-.modal-checkbox-text .policy-link {
+
+.checkbox:checked + .checkbox-icon {
+  background-origin: border-box;
+  background-image: url(../images/iconcheck-ok.svg);
+  background-size: contain;
+  border-color: transparent;
+}
+.checkbox-link {
+  margin-left: 5px;
   color: var(--accent-color);
   text-decoration: underline;
 }
-/* ======================================== */
-/* .container3 {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.container3 input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-.container3:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-.container3 input:checked ~ .checkmark {
-  background-color: #2196f3;
-}
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.container3 input:checked ~ .checkmark:after {
-  display: block;
-}
-.container3 .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
- */
-/* ================================================= */
 
 .modal-btn-submit {
   margin: auto;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 55px;
   padding-right: 55px;
 
@@ -645,7 +597,7 @@ a {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--accent-color);
+  border: 0;
 }
 /* =====ИКОНКИ И ХОВЕРЫ В МОДАЛЬНОМ ОКНЕ===== */
 .button-close-modal .icon-close:hover,
@@ -668,13 +620,13 @@ a {
 .modal-input-text:focus ~ .modal-icon-black {
   fill: var(--accent-color);
 }
-===============
+/* ===============
   Футер
   ==================
   =================================================
   ==================================================
-  */
-  .footer-page {
+   */
+.footer-page {
   padding-top: 60px;
   padding-bottom: 60px;
   color: var(--title-text-white);
@@ -815,7 +767,7 @@ a {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--accent-color);
+  border: 0;
 }
 .icon-telegram {
   margin-left: 10px;
